@@ -162,7 +162,7 @@ int main(){
     char exp[50];
     printf("ENTER THE INFIX EXPRESSION :\n");
     scanf("%s",exp);
-    printf("INFIX EXPRESION IS : %s\n",exp);
+    printf("INFIX EXPRESSION IS : %s\n",exp);
     InfixToPostfix(s,exp);
     printf("EVALUTION : %d",Evaluation(s1,post));
 }
