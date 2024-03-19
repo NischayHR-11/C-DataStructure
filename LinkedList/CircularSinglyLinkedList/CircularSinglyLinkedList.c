@@ -142,6 +142,7 @@ void DeleteByPosition(struct list *l,int pos){
         l->head=l->head->next;
         l->tail->next=l->head;
         free(p);
+        l->size--;
         return;
     }
 
