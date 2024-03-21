@@ -43,6 +43,17 @@ struct node *Insert(struct node *root,int val){
 
 }
 
+int height(struct node *root){
+
+    if(root==NULL){
+        return 0;
+    }
+
+    int x=height(root->left);
+    int y=height(root->right);
+
+    return ((x>y)?x:y)+1;
+}
 
 void Search(struct node *root,int val){
 
@@ -213,6 +224,7 @@ int main(){
     printf("NUMBER OF NODES : %d\n",count);
     delete(root,3);
     InOrderdisplay(root);
-
+    printf("\n");
+    printf("HEIGHT OF TREE : %d\n",height(root));
 
 }
