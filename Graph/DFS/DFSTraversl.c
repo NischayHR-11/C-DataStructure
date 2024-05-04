@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int visited[5]={0,0,0,0,0}; 
+int visited[8]={0,0,0,0,0,0,0,0}; 
 
-void DFS(int i,int size,int matrix[5][5]){
+void DFS(int i,int size,int matrix[][8]){
 
     int s[50]; int top=-1;
 
